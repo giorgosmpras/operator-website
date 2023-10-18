@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+
+
+deploy:
+  stage: deploy
+  script: 
+    
+    - sudo rm -rf /var/www/website/*  # Remove existing contents
+    - sudo cp -r * /var/www/website/  # Copy new app files
+          
